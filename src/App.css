@@ -4,6 +4,7 @@
 }
 :root {
   --primary-c: #0fb2df;
+  --white-c: #ffffff;
 }
 html {
   font-size: 16px;
@@ -46,7 +47,7 @@ body {
 }
 .tags .tag {
   background: #333333;
-  color: #ffffff;
+  color: var(--white-c);
   font-size: 0.8rem;
   padding: 3px 8px;
   border-radius: 5px;
@@ -71,4 +72,31 @@ body {
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
+}
+
+/* card styles */
+.card {
+  background: #444;
+  color: var(--white-c);
+  padding: 20px 60px;
+  border-radius: 10px;
+}
+.card h3 {
+  font-size: 1rem;
+}
+.card h4 {
+  color: #888;
+}
+.date-box {
+  background: var(--primary-c);
+  color: var(--white-c);
+  width: fit-content;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.date-box .date {
+  font-size: 1.8rem;
+  font-weight: 700;
 }
