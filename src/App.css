@@ -5,12 +5,16 @@
 :root {
   --primary-c: #0fb2df;
   --white-c: #ffffff;
+  --accent-c: #0ec11a;
 }
 html {
   font-size: 16px;
 }
 body {
   font-family: sans-serif;
+}
+.wrapper {
+  display: flex;
 }
 
 /* DetailsArea styles */
@@ -80,12 +84,30 @@ body {
   color: var(--white-c);
   padding: 20px 60px;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 .card h3 {
   font-size: 1rem;
+  margin-bottom: 20px;
 }
 .card h4 {
-  color: #888;
+  color: #a7a7a7;
+  margin-bottom: 10px;
+}
+.card .group {
+  margin-bottom: 20px;
+}
+.card .group .sub-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+}
+.card .group .sub-group span {
+  font-size: 0.85rem;
+}
+.card .group .sub-group .date-box {
+  margin-top: 6px;
 }
 .date-box {
   background: var(--primary-c);
@@ -97,6 +119,41 @@ body {
   text-align: center;
 }
 .date-box .date {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
+}
+.card .group .sub-group .buttons {
+  display: flex;
+  gap: 10px;
+}
+.card .group .sub-group .buttons button {
+  background: transparent;
+  border: none;
+  color: var(--white-c);
+  padding: 4px 24px;
+  background: #333333;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+.show-slots {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.show-slots .cinemas {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  width: 150px;
+}
+.show-slots .slot {
+  border: 1px solid var(--accent-c);
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+/* Booking Area */
+.bookingArea {
+  flex-grow: 1;
+  padding: 15px;
 }
